@@ -38,7 +38,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{baseUrl}}/form-library/check-health",
+				"url": "https://api.qa.bloqcube.com/form-library/check-health",
 				"description": "\nThis endpoint is used to check the health status of the form library. \n\nThe response will have a status code of 200 and the content type will be in JSON format.\n"
 			},
 			"response": []
@@ -74,7 +74,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{baseUrl}}/trial-mgmt/check-health"
+				"url": "https://api.qa.bloqcube.com/trial-mgmt/check-health"
 			},
 			"response": []
 		},
@@ -116,7 +116,7 @@
 					"mode": "raw",
 					"raw": ""
 				},
-				"url": "{{baseUrl}}/system-admin/check-health"
+				"url": "https://api.qa.bloqcube.com/system-admin/check-health"
 			},
 			"response": []
 		}
