@@ -45,3 +45,30 @@ pipeline {
         }
     }
 }
+
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Clone the repository
+                git url: 'https://github.com/your-repo.git', branch: 'main'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    // Install Newman and htmlextra reporter globally
+                    sh 'npm install -g newman newman-reporter-htmlextra'
+                }
+            }
+        }
+        stage('Run Postman Collection') {
+            steps {
+                script {
+                    // Run the Postman collection with htmlextra reporter
+                    sh 'newman run path/to/your/postman_collection.json -r htmlextra'
+                }
+            }
+        }
+    }
+}
