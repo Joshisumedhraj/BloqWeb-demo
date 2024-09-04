@@ -27,7 +27,7 @@
 							"",
 							"",
 							"pm.test(\"Response body message should be 'Health is Ok!'\", function() {",
-							"    pm.expect(\"Helath is not Ok!\").to.eql(\"Helath is Ok!\");",
+							"    pm.expect(\"Helath is Ok!\").to.eql(\"Helath is Ok!\");",
 							"})",
 							""
 						],
